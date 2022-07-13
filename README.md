@@ -1,6 +1,6 @@
 # Mathematics React
 
-> This project is geared towards applying react to build a simple calculator:
+> This project is geared towards applying react to build a simple Mathematics Calculator Website:
 
 - Create repository withe readme file
 - Create Branch
@@ -9,6 +9,7 @@
 - Set Up Webpack
 - Descriptive and Understanding Commit Messages and ReadMe file
 - Pull Request in Github for code review
+- Introduce Router for page navigation
 
 ## Built With
 
