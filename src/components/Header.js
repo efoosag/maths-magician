@@ -4,7 +4,7 @@ const Header = () => (
   <header className="navbar">
     <h1> Math Magicians </h1>
     <div className="links">
-      <a href="/" className="link-item first-item">
+      <a href="/" className="link-item">
         Home
       </a>
       <a href="/calculator" className="link-item">
