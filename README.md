@@ -1,4 +1,4 @@
-# Mathematics React
+# Maths Magician
 
 > This project is geared towards applying react to build a simple Mathematics Calculator Website:
 
