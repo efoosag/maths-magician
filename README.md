@@ -1,23 +1,20 @@
 # Maths Magician
 
-> This project is geared towards applying react to build a simple Mathematics Calculator Website:
+> This project is geared towards applying react to build a simple calculator:
 
 - Create repository withe readme file
 - Create Branch
 - Applying best practices for HTML and CSS
 - Applying Github Flow
-- Set Up Webpack
 - Descriptive and Understanding Commit Messages and ReadMe file
 - Pull Request in Github for code review
-- Introduce Router for page navigation
-- Carryout Testing on function and components
 
 ## Built With
 
 - Major languages
-  HTML & CSS
+  CSS, HTML and JavaScript
 
--Frameworks:React
+-Library:React
 
 - Technologies used
   GitHub and Git
@@ -27,20 +24,9 @@
 
 **In order to get the app running,.**
 
-- creat a repository mathematics-react
-- Run create-react-app on my terminal
+- clone this https://github.com/efoosag/maths-magician.git repository
+- Run npm install 
 - Use npm start to lunch it on my browser
-
-### For Live Demo
-
-- https://mathsmagic.herokuapp.com/
-- https://62cff7c49951cf4d49283fbd--imaginative-cobbler-e1d3a8.netlify.app/
-
-### Prerequisites
-
-    Laptop or Deskstop Computer
-    Internet Connection
-    Power Supply
 
 ### Prerequisites
 
@@ -55,7 +41,7 @@
 
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
 - GitHub: [@efoosag](https://github.com/efoosag)
 - Twitter: [@Victor Osagie](https://www.twitter.com/Victorosagie08)
