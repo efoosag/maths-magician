@@ -1,39 +1,50 @@
-import React from 'react';
-// import { PropTypes } from 'prop-types';
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
+// import calculate from '../logic/calculate';
 
 function Label() {
+  const [result, setResult] = useState({ total: 0, next: null, operation: null });
+  const handleClick = (e) => {
+    setResult(calculate(result, e.target.value));
+  };
   return (
     <div>
       <div className="container">
-        <div className="answer">0</div>
-        <div className="buttons">
-          <div className="buttons-item buttons-item-others">AC</div>
-          <div className="buttons-item buttons-item-others">+/-</div>
-          <div className="buttons-item buttons-item-others">%</div>
-          <div className="buttons-item buttons-item-right">/</div>
+        <div className="answer">
+          {result.total}
+          {' '}
+          {result.operation}
+          {' '}
+          {result.next}
         </div>
         <div className="buttons">
-          <div className="buttons-item buttons-item-others">7</div>
-          <div className="buttons-item buttons-item-others">8</div>
-          <div className="buttons-item buttons-item-others">9</div>
-          <div className="buttons-item buttons-item-right">X</div>
+          <button type="button" value="AC" onClick={handleClick} className="buttons-item buttons-item-others">AC</button>
+          <button type="button" value="+/-" onClick={handleClick} className="buttons-item buttons-item-others">+/-</button>
+          <button type="button" value="%" onClick={handleClick} className="buttons-item buttons-item-others">%</button>
+          <button type="button" value="÷" onClick={handleClick} className="buttons-item buttons-item-right">/</button>
         </div>
         <div className="buttons">
-          <div className="buttons-item buttons-item-others">4</div>
-          <div className="buttons-item buttons-item-others">5</div>
-          <div className="buttons-item buttons-item-others">6</div>
-          <div className="buttons-item buttons-item-right">-</div>
+          <button type="button" value="7" onClick={handleClick} className="buttons-item buttons-item-others">7</button>
+          <button type="button" value="8" onClick={handleClick} className="buttons-item buttons-item-others">8</button>
+          <button type="button" value="9" onClick={handleClick} className="buttons-item buttons-item-others">9</button>
+          <button type="button" value="x" onClick={handleClick} className="buttons-item buttons-item-right">X</button>
         </div>
         <div className="buttons">
-          <div className="buttons-item buttons-item-others">1</div>
-          <div className="buttons-item buttons-item-others">2</div>
-          <div className="buttons-item buttons-item-others">3</div>
-          <div className="buttons-item buttons-item-right">+</div>
+          <button type="button" value="4" onClick={handleClick} className="buttons-item buttons-item-others">4</button>
+          <button type="button" value="5" onClick={handleClick} className="buttons-item buttons-item-others">5</button>
+          <button type="button" value="6" onClick={handleClick} className="buttons-item buttons-item-others">6</button>
+          <button type="button" value="-" onClick={handleClick} className="buttons-item buttons-item-right">-</button>
         </div>
         <div className="buttons">
-          <div className="buttons-item buttons-item-zero">0</div>
-          <div className="buttons-item buttons-item-others">.</div>
-          <div className="buttons-item buttons-item-right">=</div>
+          <button type="button" value="1" onClick={handleClick} className="buttons-item buttons-item-others">1</button>
+          <button type="button" value="2" onClick={handleClick} className="buttons-item buttons-item-others">2</button>
+          <button type="button" value="3" onClick={handleClick} className="buttons-item buttons-item-others">3</button>
+          <button type="button" value="+" onClick={handleClick} className="buttons-item buttons-item-right">+</button>
+        </div>
+        <div className="buttons">
+          <button type="button" value="0" onClick={handleClick} className="buttons-item buttons-item-zero">0</button>
+          <button type="button" value="." onClick={handleClick} className="buttons-item buttons-item-others">.</button>
+          <button type="button" value="" onClick={handleClick} className="buttons-item buttons-item-right">=</button>
         </div>
       </div>
     </div>
