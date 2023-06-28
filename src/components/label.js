@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
-// import calculate from '../logic/calculate';
+import './Label.css';
 
 function Label() {
   const [result, setResult] = useState({ total: 0, next: null, operation: null });
@@ -9,7 +9,7 @@ function Label() {
   };
   return (
     <div>
-      <div className="container">
+      <div className="cal-item">
         <div className="answer">
           {result.total}
           {' '}
