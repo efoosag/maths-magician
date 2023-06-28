@@ -1,0 +1,22 @@
+.container {
+  width: 90%;
+  padding: 20px;
+  border: 0;
+}
+
+.Nav-con {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Nav-con h1 {
+  margin-top: 10px;
+}
+
+.Nav-link {
+  margin-top: 25px;
+}
+
+.Nav-con span {
+  padding: 0 10px;
+}
