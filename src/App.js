@@ -3,6 +3,7 @@ import NavLayout from './components/NavLayout';
 import Home from './components/Home';
 import Calculator from './components/Calculator';
 import Quote from './components/Quote';
+import PageNotFound from './components/PageNotFound';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="calculator" element={<Calculator />} />
             <Route path="quote" element={<Quote />} />
+            <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
