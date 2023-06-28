@@ -1,12 +1,12 @@
-.cal-container{    
-    display: flex;
-    justify-content: space-around;
+.cal-container {
+  display: flex;
+  justify-content: space-around;
 }
 
-.cal-container h3{    
+.cal-container h3 {
   margin-top: 50px;
 }
 
-.cal-label {    
+.cal-label {
   margin-top: 50px;
 }
